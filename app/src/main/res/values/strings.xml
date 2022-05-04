@@ -1,3 +1,18 @@
 <resources>
-    <string name="app_name">Big_Lake</string>
+    <string name="app_name">大湖底休閒農業園區</string>
+    <string name="textview_gameStart">遊戲開始</string>
+    <string name="textView_achievement">地點成就</string>
+    <string name="textview_map">地圖</string>
+    <string name="textview_redeemGifts">兌換禮品</string>
+    <string name="toast_exit">按兩下離開</string>
+    <string name="menu">--- 地點 ---</string>
+    <string name="menu_1">大湖</string>
+    <string name="menu_2">水仙尊王廟</string>
+    <string name="menu_3">螃蟹冒泡</string>
+    <string name="menu_4">船仔頭、浮梘橋</string>
+    <string name="menu_5">二湖鳳梨館</string>
+    <string name="menu6">健康上好果園</string>
+    <string name="menu_7">醋老爺</string>
+    <string name="game2_dis">。景點介紹\n\n 水仙尊王廟又稱金大安廟，是宜蘭縣唯一以水仙尊王為奉祀主神的廟，因大湖為員山地區重要灌溉水源，因此在大湖畔奉祀水仙尊王\n\n 。活動-水神發威啦\n\n 會有一道一道的水沖往農田，身為水神，請透過「連點」的方式擊退他們</string>
+    <string name="button_start">開始遊戲</string>
 </resources>

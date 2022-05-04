@@ -8,9 +8,44 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Big_Lake">
+        android:theme="@style/NoActionBar">
         <activity
-            android:name=".MainActivity"
+            android:name=".Game7"
+            android:exported="false" />
+        <activity
+            android:name=".Game6"
+            android:exported="false" />
+        <activity
+            android:name=".Menu"
+            android:exported="false" />
+        <activity
+            android:name=".Game5"
+            android:exported="false" />
+        <activity
+            android:name=".Game4"
+            android:exported="false" />
+        <activity
+            android:name=".Game3"
+            android:exported="false" />
+        <activity
+            android:name=".Game2"
+            android:exported="true" >
+
+        </activity>
+        <activity
+            android:name=".Gift"
+            android:exported="false" />
+        <activity
+            android:name=".Map"
+            android:exported="false" />
+        <activity
+            android:name=".Achievement"
+            android:exported="false" />
+        <activity
+            android:name=".Game1"
+            android:exported="false" />
+        <activity
+            android:name=".Title"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

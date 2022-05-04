@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Title">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/title" />
+
+    <TextView
+        android:id="@+id/textView_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="#B4DFD7D7"
+        android:text="@string/textview_gameStart"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView_achievement"
+        app:layout_constraintEnd_toEndOf="@+id/textView_achievement"
+        app:layout_constraintStart_toStartOf="@+id/textView_achievement"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/textView_achievement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="#B4DFD7D7"
+        android:text="@string/textView_achievement"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView_map"
+        app:layout_constraintEnd_toEndOf="@+id/textView_map"
+        app:layout_constraintStart_toStartOf="@+id/textView_map"
+        app:layout_constraintTop_toBottomOf="@+id/textView_start" />
+
+    <TextView
+        android:id="@+id/textView_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="#B4DFD7D7"
+        android:text="@string/textview_map"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView_gift"
+        app:layout_constraintEnd_toEndOf="@+id/textView_gift"
+        app:layout_constraintStart_toStartOf="@+id/textView_gift"
+        app:layout_constraintTop_toBottomOf="@+id/textView_achievement" />
+
+    <TextView
+        android:id="@+id/textView_gift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="#B4DFD7D7"
+        android:text="@string/textview_redeemGifts"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_map" />
+</androidx.constraintlayout.widget.ConstraintLayout>
