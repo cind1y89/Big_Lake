@@ -6,4 +6,186 @@
     android:layout_height="match_parent"
     tools:context=".Game7">
 
+    <Button
+        android:id="@+id/button_G7go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/button_start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView_G7dis"
+        app:layout_constraintStart_toStartOf="@+id/textView_G7dis"
+        app:layout_constraintTop_toBottomOf="@+id/textView_G7dis" />
+
+    <Button
+        android:id="@+id/button_g7a1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="蒜 "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/button_g7a2"
+        app:layout_constraintEnd_toEndOf="@+id/textview_g7a"
+        app:layout_constraintStart_toStartOf="@+id/textview_g7a"
+        app:layout_constraintTop_toBottomOf="@+id/textview_g7a" />
+
+    <Button
+        android:id="@+id/button_g7a2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="薑 "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/button_g7a3"
+        app:layout_constraintEnd_toEndOf="@+id/button_g7a1"
+        app:layout_constraintStart_toStartOf="@+id/button_g7a1"
+        app:layout_constraintTop_toBottomOf="@+id/button_g7a1" />
+
+    <Button
+        android:id="@+id/button_g7a3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="辣椒"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/button_g7a4"
+        app:layout_constraintEnd_toEndOf="@+id/button_g7a2"
+        app:layout_constraintStart_toStartOf="@+id/button_g7a2"
+        app:layout_constraintTop_toBottomOf="@+id/button_g7a2" />
+
+    <Button
+        android:id="@+id/button_g7a4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="蔥"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/button_g7a3"
+        app:layout_constraintStart_toStartOf="@+id/button_g7a3"
+        app:layout_constraintTop_toBottomOf="@+id/button_g7a3" />
+
+    <ImageView
+        android:id="@+id/imageView_menu"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@android:drawable/ic_menu_sort_by_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView_game7dis"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_game7dis"
+        app:srcCompat="@drawable/game7a1" />
+
+    <TextView
+        android:id="@+id/textView_game7title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/textView_game7subtitle"
+        app:layout_constraintEnd_toEndOf="@+id/textView_game7subtitle"
+        app:layout_constraintStart_toStartOf="@+id/textView_game7subtitle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/textView_game7subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/textView_game7dis"
+        app:layout_constraintEnd_toEndOf="@+id/textView_game7dis"
+        app:layout_constraintStart_toStartOf="@+id/textView_game7dis"
+        app:layout_constraintTop_toBottomOf="@+id/textView_game7title" />
+
+    <TextView
+        android:id="@+id/textView_game7dis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="TextView"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/imageView_game7dis"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_game7dis"
+        app:layout_constraintStart_toStartOf="@+id/imageView_game7dis"
+        app:layout_constraintTop_toBottomOf="@+id/textView_game7subtitle" />
+
+    <TextView
+        android:id="@+id/textView_G7dis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="@string/game7_dis"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button_G7go"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/textview_g7a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="在你舌頭的感官認知上，什麽樣的調味料，最有吸引力呢？"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/button_g7a1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

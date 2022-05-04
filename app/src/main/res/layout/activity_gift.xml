@@ -6,4 +6,59 @@
     android:layout_height="match_parent"
     tools:context=".Gift">
 
+    <ImageView
+        android:id="@+id/imageView_menu"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@android:drawable/ic_menu_sort_by_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button_giftgo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SPIN"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_gift" />
+
+    <ImageView
+        android:id="@+id/imageView_gift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/button_giftgo"
+        app:layout_constraintEnd_toEndOf="@+id/button_giftgo"
+        app:layout_constraintStart_toStartOf="@+id/button_giftgo"
+        app:layout_constraintTop_toBottomOf="@+id/textView_giftdis"
+        app:srcCompat="@drawable/gift_ch" />
+
+    <ImageView
+        android:id="@+id/imageView_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gift_ch2" />
+
+    <TextView
+        android:id="@+id/textView_giftdis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="兌換方式"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView_gift"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_gift"
+        app:layout_constraintStart_toStartOf="@+id/imageView_gift"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
 </androidx.constraintlayout.widget.ConstraintLayout>
