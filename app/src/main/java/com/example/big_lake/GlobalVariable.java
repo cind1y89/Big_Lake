@@ -4,7 +4,22 @@ import android.app.Application;
 
 public class GlobalVariable extends Application {
 
-    Boolean s1,s2,s3,s4,s5,s7;
+    Boolean s1;
+    Boolean s2;
+    Boolean s3;
+    Boolean s4;
+    Boolean s5;
+    Boolean s7;
+    Boolean s6;
+
+    public Boolean getS6() {
+        return s6;
+    }
+
+    public void setS6(Boolean s6) {
+        this.s6 = s6;
+    }
+
     public Boolean getS1() {
         return s1;
     }

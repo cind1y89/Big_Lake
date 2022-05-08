@@ -82,10 +82,10 @@ public class Game3 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Log.d("Test","index "+index);
-                if(index==0 || index==1){
-                    right();
-                }else if(index==2 || index==3){
+                if(index==2 || index==3){
                     wrong();
+                }else if(index==0 || index==1 ){
+                    right();
                 }
 
             }
@@ -106,6 +106,8 @@ public class Game3 extends AppCompatActivity {
     private void wrong() {
         button_yes.setText("YES");
         button_no.setText("NO");
+        textView_q.setText(answer[index]);
+
         if(index>0){
             index--;
         }
@@ -118,7 +120,11 @@ public class Game3 extends AppCompatActivity {
                 button_no.setVisibility(View.VISIBLE);
                 button_yes.setVisibility(View.VISIBLE);
                 button_u.setVisibility(View.GONE);
-                textView_q.setText(answer[index]);
+                textView_q.setText(question[index]);
+                if(index==2){
+                    button_yes.setText("膳食纖維");
+                    button_no.setText("花青素");
+                }
             }
         });
 

@@ -213,7 +213,7 @@ public class Game1 extends AppCompatActivity {
                             imageView_tmp.setImageResource(R.drawable.game1_back);
                             imageView.setOnClickListener(clickListener);
                         }
-                    },1000);
+                    },2000);
                 }
                 turn=false;
             }else{

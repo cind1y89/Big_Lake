@@ -11,13 +11,20 @@
         android:supportsRtl="true"
         android:theme="@style/NoActionBar">
         <activity
-            android:name=".Game7"
+            android:name=".Game6"
             android:exported="true" >
 
         </activity>
         <activity
-            android:name=".Game6"
-            android:exported="false" />
+            android:name=".Game6c"
+            android:exported="true" >
+
+        </activity>
+        <activity
+            android:name=".Game7"
+            android:exported="true" >
+
+        </activity>
         <activity
             android:name=".Menu"
             android:exported="false" />

@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 public class Achievement extends GlobalCode {
 
-    ImageView imageView_menu,imageView_ac1,imageView_ac2,imageView_ac3,imageView_ac4,imageView_ac5,imageView_ac6,imageView_ac7,imageView_ac8;
+    ImageView imageView_menu,imageView_ac1,imageView_ac2,imageView_ac3,imageView_ac4,imageView_ac5,imageView_ac6,imageView_ac7;
     GlobalVariable globalVariable;
 
 
@@ -36,6 +36,7 @@ public class Achievement extends GlobalCode {
         imageView_ac3=findViewById(R.id.imageView_ac3);
         imageView_ac4=findViewById(R.id.imageView_ac4);
         imageView_ac5=findViewById(R.id.imageView_ac5);
+        imageView_ac6=findViewById(R.id.imageView_ac6);
         imageView_ac7=findViewById(R.id.imageView_ac7);
 
         globalVariable= (GlobalVariable) getApplicationContext();
@@ -69,14 +70,16 @@ public class Achievement extends GlobalCode {
                 if(globalVariable.getS5()){
                     imageView_ac5.setVisibility(View.VISIBLE);
                 }
+            }if(globalVariable.getS6()!=null){
+                Log.d("Test","6 "+globalVariable.getS6());
+                if(globalVariable.getS6()){
+                    imageView_ac6.setVisibility(View.VISIBLE);
+                }
             }
             if(globalVariable.getS7()!=null){
                 Log.d("Test","7 "+globalVariable.getS7());
-                if(globalVariable.getS7()==true){
-                    Log.d("Test","7 yes");
+                if(globalVariable.getS7()){
                     imageView_ac7.setVisibility(View.VISIBLE);
-                }else{
-                    Log.d("Test","7 wrong");
                 }
             }
         }
