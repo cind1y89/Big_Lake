@@ -1,20 +1,24 @@
 <resources>
     <string name="app_name">大湖底休閒農業園區</string>
-    <string name="textview_gameStart">遊戲開始</string>
-    <string name="textView_achievement">地點成就</string>
-    <string name="textview_map">地圖</string>
-    <string name="textview_redeemGifts">兌換禮品</string>
+    <string name="textview_gameStart">\t遊戲開始 \t</string>
+    <string name="textView_achievement">\t地點成就 \t</string>
+    <string name="textview_map">\t地圖 \t</string>
+    <string name="textview_redeemGifts">\t兌換禮品 \t</string>
     <string name="toast_exit">按兩下離開</string>
     <string name="menu">--- 地點 ---</string>
     <string name="menu_1">大湖</string>
     <string name="menu_2">水仙尊王廟</string>
-    <string name="menu_3">螃蟹冒泡</string>
+    <string name="menu_3">健康上好果園</string>
     <string name="menu_4">船仔頭、浮梘橋</string>
     <string name="menu_5">二湖鳳梨館</string>
-    <string name="menu6">健康上好果園</string>
+    <string name="menu6">螃蟹冒泡</string>
     <string name="menu_7">醋老爺</string>
     <string name="game2_dis">。景點介紹\n水仙尊王廟又稱金大安廟，是宜蘭縣唯一以水仙尊王為奉祀主神的廟，因大湖為員山地區重要灌溉水源，因此在大湖畔奉祀水仙尊王\n\n 。活動-水神發威啦\n會有一道一道的水沖往農田，身為水神，請透過「連點」的方式擊退他們</string>
     <string name="button_start">開始遊戲</string>
+    <string name="game5_dis">。景點介紹\n二湖鳳梨館，建築是鳳梨的元素去構成，館內展示著鳳梨的習性及生長過程，北台灣唯一鳳梨產區，是全球緯度最高的鳳梨產區\n\n。活動-開心鳳梨田\n旁邊有鳳梨頭、灑水器、肥料、鐮刀，按照肥料、鳳梨頭、灑水器的順序拉到畫面中央的田中，中間示意圖會變成鳳梨，再以鐮刀將鳳梨收成，即通關。</string>
+
     <string name="game7_dis">。景點介紹\n酢老爺為了釀造好醋，除了嚴選在地化果，以蜂蜜為基底醋，最重要的就是天然好水，因此選擇具有優良水資源的員山，期許釀造出更多健康機能醋飲\n\n。活動-你適合吃甚麼醋\n利用測驗問題，顯示你適合吃的醋</string>
     <string name="game4_dis">。景點介紹\n船仔頭溪是以前大湖地區將物資送往宜蘭的重要運河，古渡頭就在土地公廟旁，附近有一個奇特的文化景觀-浮梘橋，是專門用來給灌溉水走的橋\n\n。活動-尋找浮梘橋\n到了船仔頭之後，跳出「請沿著溪尋找浮梘橋」的提示， 並且在下列四張照片中，選出真正的浮梘橋照片</string>
+    <string name="game3_dis">。景點介紹\n健康上好果園的火龍果，是採用有機無毒裁培方式種植出來的，並且擁有各種不同性狀的火龍果各具特色\n\n。活動-火龍果知識大闖關\n回答問題，答對繼續，答錯後退。</string>
+    <string name="game_dis1">。景點介紹\n水源來自雪山山脈的天然泉水匯聚的大湖，四季風貌各異其趣，環湖步道值得一遊，延展無限綠意，湖中各種水鳥，小水鴨、翠鳥、蒼鷺常常能見到\n\n。活動-水鳥對對碰\n 以常見的水鳥做翻牌對對碰。小水鴨、翠鳥、蒼鷺、台灣藍鵲、鳳頭蒼鷹。</string>
 </resources>

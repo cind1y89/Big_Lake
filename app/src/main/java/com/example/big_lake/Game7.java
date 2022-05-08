@@ -13,6 +13,7 @@ public class Game7 extends GlobalCode {
     Button button_go,button_a1,button_a2,button_a3,button_a4;
     ImageView imageView_dis,imageView_menu;
     int i=0;
+    GlobalVariable globalVariable;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +38,8 @@ public class Game7 extends GlobalCode {
                     i++;
                     game();
                 }else {
+                    globalVariable= (GlobalVariable) getApplicationContext();
+                    globalVariable.setS7(true);
                     Intent intent=new Intent(Game7.this,Menu.class);
                     startActivity(intent);
                     finish();
@@ -128,6 +131,7 @@ public class Game7 extends GlobalCode {
         }else if(i==3){
             imageView_dis.setImageResource(R.drawable.game7a4);
         }
+
 
         button_go.setVisibility(View.VISIBLE);
         button_go.setText("回上頁");

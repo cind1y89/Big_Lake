@@ -24,6 +24,7 @@
         android:id="@+id/button_giftgo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
         android:text="SPIN"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,7 +34,7 @@
     <ImageView
         android:id="@+id/imageView_gift"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="300dp"
         app:layout_constraintBottom_toTopOf="@+id/button_giftgo"
         app:layout_constraintEnd_toEndOf="@+id/button_giftgo"
         app:layout_constraintStart_toStartOf="@+id/button_giftgo"
@@ -42,19 +43,21 @@
 
     <ImageView
         android:id="@+id/imageView_spinner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_giftgo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView_gift"
         app:srcCompat="@drawable/gift_ch2" />
 
     <TextView
         android:id="@+id/textView_giftdis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="兌換方式"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="兌換方式\n收集完全部字卡後即可抽獎\n只能抽取一次\n請在工作人員的陪同下抽取"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/imageView_gift"
         app:layout_constraintEnd_toEndOf="@+id/imageView_gift"

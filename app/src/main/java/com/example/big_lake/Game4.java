@@ -16,6 +16,8 @@ public class Game4 extends GlobalCode {
     Button button_go;
     TextView textView_q,textView_dis;
     int i=0;
+    GlobalVariable globalVariable;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +42,8 @@ public class Game4 extends GlobalCode {
                     i++;
                     game();
                 }else {
+                    globalVariable= (GlobalVariable) getApplicationContext();
+                    globalVariable.setS4(true);
                     Intent intent=new Intent(Game4.this,Menu.class);
                     startActivity(intent);
                     finish();
@@ -81,6 +85,7 @@ public class Game4 extends GlobalCode {
             @Override
             public void onClick(View view) {
                 Toast.makeText(Game4.this, "沒錯，你超棒", Toast.LENGTH_SHORT).show();
+                textView_dis.setVisibility(View.INVISIBLE);
                 button_go.setVisibility(View.VISIBLE);
                 button_go.setText("回上頁");
             }

@@ -25,6 +25,8 @@ public class Game2 extends GlobalCode {
     Button button_go;
     ProgressBar progressBar_d1,progressBar_d2,progressBar_d3,progressBar_d4,progressBar_d5;
     int i =0;
+    GlobalVariable globalVariable;
+    boolean s;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,6 +80,8 @@ public class Game2 extends GlobalCode {
                     }.start();
                     i++;
                 }else{
+                    globalVariable= (GlobalVariable) getApplicationContext();
+                    globalVariable.setS2(s);
                     Intent intent=new Intent(Game2.this,Menu.class);
                     startActivity(intent);
                     finish();
@@ -111,18 +115,22 @@ public class Game2 extends GlobalCode {
                     image_pos(imageView_ch);//底圖位置
                     imageView_d1.setVisibility(View.VISIBLE);
                     image_drop(imageView_d1);
-                }else if((millisUntilFinished / 1000)==23){
-                    imageView_d2.setVisibility(View.VISIBLE);
-                    image_drop(imageView_d2);
-                }else if((millisUntilFinished / 1000)==17){
-                    imageView_d3.setVisibility(View.VISIBLE);
-                    image_drop(imageView_d3);
-                }else if((millisUntilFinished / 1000)==13){
-                    imageView_d4.setVisibility(View.VISIBLE);
-                    image_drop(imageView_d4);
-                }else if((millisUntilFinished / 1000)==10){
+                }
+                if((millisUntilFinished / 1000)==26){
                     imageView_d5.setVisibility(View.VISIBLE);
                     image_drop(imageView_d5);
+                }
+                if((millisUntilFinished / 1000)==23){
+                    imageView_d3.setVisibility(View.VISIBLE);
+                    image_drop(imageView_d3);
+                }
+                if((millisUntilFinished / 1000)==15){
+                    imageView_d4.setVisibility(View.VISIBLE);
+                    image_drop(imageView_d4);
+                }
+                if((millisUntilFinished / 1000)==10){
+                    imageView_d2.setVisibility(View.VISIBLE);
+                    image_drop(imageView_d2);
                 }
 
 
@@ -141,6 +149,7 @@ public class Game2 extends GlobalCode {
 
             }
             public void onFinish() {
+                s=true;
                 textView_timer.setText("0");
 
                 textView_dis.setVisibility(View.VISIBLE);
@@ -166,6 +175,7 @@ public class Game2 extends GlobalCode {
 //        Log.d("judge","limitline top:"+top);
 
         if(image_y[i]>(top+200) && progressBar.getProgress()<100){
+            s=false;
             textView_timer.setText("0");
             textView_dis.setVisibility(View.VISIBLE);
             textView_dis.setText("GAMEOVER");
